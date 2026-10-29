@@ -1,0 +1,10 @@
+#classactivity1 BI
+import nltk
+from nltk.tokenize import word_tokenize
+nltk.download ('punkt_tab')
+
+text = " During the debate on the 2027 budget bill yesterday, Radzi proposed mobilising military personnel to help the immigration department arrest and deport undocumented migrants. Malaysiakini reported him as saying this would send a clear message to the international community and human trafficking syndicates that Malaysia is serious about tackling the issue. Radzi also said the country would be “destroyed” if the government failed to effectively stem the entry of illegal immigrants, including by imposing stricter policies on the employment of migrant workers. However, Santiago said if soldiers are deployed, they should be sent against “recruitment cartels that manufacture debt bondage and corrupt officials who enable labour trafficking”. He claimed that while Malaysian law caps worker recruitment fees at one month’s wage, or RM1,700, Bangladeshi workers routinely pay fees ranging from RM20,000 to RM30,000."
+
+tokens = word_tokenize (text)
+print (tokens)
+print("Number word token: ", len(tokens))

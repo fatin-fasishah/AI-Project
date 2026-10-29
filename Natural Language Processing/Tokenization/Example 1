@@ -1,0 +1,7 @@
+import nltk
+from nltk.tokenize import word_tokenize
+nltk.download ('punkt_tab')
+
+text = "AI in modern computing is powerful and interesting!"
+tokens = word_tokenize (text)
+print (tokens)

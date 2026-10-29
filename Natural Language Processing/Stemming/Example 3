@@ -1,0 +1,11 @@
+#classactivity1
+from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
+from nltk.tokenize import word_tokenize
+
+factory = StemmerFactory()
+stemmer = factory.create_stemmer()
+
+words = ["penyahutan", "pekerja", "ketidakseimbangan", "penyahbakterian", "keterdedahan"]
+
+for w in words:
+  print(w, "->", stemmer.stem(w))

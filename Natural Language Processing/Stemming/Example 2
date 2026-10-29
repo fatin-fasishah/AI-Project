@@ -1,0 +1,10 @@
+!pip install Sastrawi
+import Sastrawi
+from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
+
+
+factory = StemmerFactory()
+stemmer = factory.create_stemmer()
+
+sentence = 'Pemain sedang berlari di padang'
+print(stemmer.stem(sentence))

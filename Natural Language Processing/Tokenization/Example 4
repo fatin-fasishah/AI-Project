@@ -1,0 +1,7 @@
+#example2 with number of sentences
+from nltk.tokenize import sent_tokenize
+
+text = "Natural Language Processing is exciting. It helps machines understand human language."
+sentences = sent_tokenize (text)
+print (sentences)
+print("Number sentence token: ", len(sentences))

@@ -1,0 +1,16 @@
+from nltk.tokenize import word_tokenize
+from nltk.stem import PorterStemmer, WordNetLemmatizer
+import nltk
+nltk.download('punkt_tab')
+nltk.download('wordnet')
+
+text = "We are playing badminton happily with the girls tonight."
+tokens = word_tokenize(text)
+stemmer = PorterStemmer()
+lemmatizer = WordNetLemmatizer()
+
+print(f"{'Word' : <15}{'Stem' : <15}{'Lemma' : <15}")
+print("-" * 45)
+
+for w in tokens:
+  print(f"{w : <15}{stemmer.stem(w) : <15}{lemmatizer.lemmatize(w) : <15}")

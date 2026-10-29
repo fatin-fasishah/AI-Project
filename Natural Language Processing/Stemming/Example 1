@@ -1,0 +1,8 @@
+from nltk.stem import PorterStemmer
+from nltk.tokenize import word_tokenize
+
+stemmer = PorterStemmer ()
+words = ["running", "runs", "runner", "easily", "fairness"]
+
+for w in words:
+  print(w, "->", stemmer.stem(w))

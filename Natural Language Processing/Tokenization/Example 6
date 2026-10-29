@@ -1,0 +1,11 @@
+#classactivity2 BM
+from nltk.tokenize import sent_tokenize
+
+text = "KANGAR - Polis menyelamatkan seorang remaja perempuan berusia 16 tahun dipercayai mangsa eksploitasi seks dalam serbuan di sebuah premis di Arau, semalam. Ketua Polis Perlis, Deputi Komisioner Hamzah Hashim berkata, dalam serbuan Ops Noda pada 11.15 malam itu, pihaknya turut menahan dua lelaki berusia 15 dan 19 tahun disyaki menjalankan promosi aktiviti pelacuran melalui aplikasi MiChat dan melakukan eksploitasi seks terhadap kanak-kanak."
+
+tokens = word_tokenize (text)
+print (tokens)
+print("Number word token: ", len(tokens))
+sentences = sent_tokenize (text)
+print (sentences)
+print("Number sentence token: ", len(sentences))

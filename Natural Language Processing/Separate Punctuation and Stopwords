@@ -1,0 +1,22 @@
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
+import string
+import nltk
+nltk.download('stopwords')
+nltk.download('punkt_tab')
+
+text = "We're having donuts, brownies and pizza for dinner tonight!"
+
+#Tokenize
+tokens = word_tokenize(text)
+
+#Separate punctuation
+punctuation = [t for t in tokens if t in string.punctuation]
+
+#Separate stopwords
+stop_words = set(stopwords.words('english'))
+stop_words_in_text = [t for t in tokens if t.lower() in stop_words]
+
+print("Tokens: ", tokens)
+print("Punctuation: ", punctuation)
+print("Stopwords: ", stop_words_in_text)
